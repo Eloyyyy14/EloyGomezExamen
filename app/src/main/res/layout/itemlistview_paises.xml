@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/tvNombre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="13dp"
+        android:layout_marginStart="13dp"
+        android:layout_marginTop="12dp"
+        android:text="Nombre(ingles)"
+        android:textColor="@android:color/background_dark" />
+
+    <TextView
+        android:id="@+id/tvNombreTraduccion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tvNombre"
+        android:layout_alignStart="@+id/tvNombre"
+        android:layout_below="@+id/tvNombre"
+        android:layout_marginTop="13dp"
+        android:text="Nombre(castellano)"
+        android:textColor="@android:color/background_dark" />
+
+    <TextView
+        android:id="@+id/tvClave"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tvNombreTraduccion"
+        android:layout_alignStart="@+id/tvNombreTraduccion"
+        android:layout_below="@+id/tvNombreTraduccion"
+        android:layout_marginTop="18dp"
+        android:text="Clave"
+        android:textColor="@android:color/background_dark" />
+
+    <TextView
+        android:id="@+id/tvCapital"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tvClave"
+        android:layout_alignStart="@+id/tvClave"
+        android:layout_below="@+id/tvClave"
+        android:layout_marginTop="21dp"
+        android:text="Capital"
+        android:textColor="@android:color/background_dark" />
+
+    <TextView
+        android:id="@+id/tvContinente"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tvCapital"
+        android:layout_alignStart="@+id/tvCapital"
+        android:layout_below="@+id/tvCapital"
+        android:layout_marginTop="20dp"
+        android:text="Continente"
+        android:textColor="@android:color/background_dark" />
+
+    <TextView
+        android:id="@+id/tvPoblacion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="82dp"
+        android:layout_marginStart="82dp"
+        android:layout_toEndOf="@+id/tvNombreTraduccion"
+        android:layout_toRightOf="@+id/tvNombreTraduccion"
+        android:text="Población"
+        android:textColor="@android:color/background_dark" />
+
+    <TextView
+        android:id="@+id/tvLatitud"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tvPoblacion"
+        android:layout_alignStart="@+id/tvPoblacion"
+        android:layout_alignTop="@+id/tvNombreTraduccion"
+        android:text="Latitud"
+        android:textColor="@android:color/background_dark" />
+
+    <TextView
+        android:id="@+id/tvLongitud"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tvLatitud"
+        android:layout_alignStart="@+id/tvLatitud"
+        android:layout_below="@+id/tvClave"
+        android:text="Longitud"
+        android:textColor="@android:color/background_dark" />
+
+    <TextView
+        android:id="@+id/tvFronterizos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/tvContinente"
+        android:layout_alignBottom="@+id/tvContinente"
+        android:layout_alignLeft="@+id/tvLongitud"
+        android:layout_alignStart="@+id/tvLongitud"
+        android:text="Paises Fronterizos"
+        android:textColor="@android:color/background_dark" />
+</RelativeLayout>
